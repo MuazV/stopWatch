@@ -23,7 +23,6 @@ document.getElementById('resetTimer').addEventListener('click', ()=>{
     clearInterval(clocktimer);
     [milliseconds,seconds,minutes] = [0,0,0];
     timerRef.innerHTML = '00 : 00 : 00 ';
-    btn.classList.remove('stop');
     btn.classList.add('start');
     btn.innerHTML = `<i class="fa-solid fa-play"></i>`;
 });
